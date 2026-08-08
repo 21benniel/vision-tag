@@ -1,4 +1,4 @@
-# VisionTag — Auto-tag images with Vertex AI & Label Studio
+# VisionTag — Auto-label images with Vertex AI & Label Studio
 
 **VisionTag** is an open-source **image labeling** tool powered by **Vertex AI Gemini**. Define your labels in one YAML file, run a single command, and get a `labels.csv` — with optional **Label Studio** review for human-in-the-loop **auto annotation**.
 
