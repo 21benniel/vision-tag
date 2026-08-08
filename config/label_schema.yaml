@@ -1,0 +1,253 @@
+name: meme-reactions
+description: Label meme reactions for semantic search and meme-matching AI.
+
+image_field: image
+
+fields:
+  reactions:
+    type: multi_choice
+    label: Select all reactions that apply
+    max_items: 5
+    choices:
+      - awe
+      - wonder
+      - curiosity
+      - mesmerized
+      - enchanted
+      - adoration
+      - cute
+      - happy
+      - confused
+      - surprised
+      - shocked
+      - disbelief
+      - realization
+      - angry
+      - annoyed
+      - irritated
+      - frustrated
+      - sad
+      - crying
+      - disappointed
+      - disgusted
+      - fear
+      - scared
+      - panicked
+      - worried
+      - anxious
+      - nervous
+      - embarrassed
+      - awkward
+      - guilty
+      - desperate
+      - pleading
+      - begging
+      - helpless
+      - hopeless
+      - lonely
+      - tired
+      - bored
+      - impatient
+      - excited
+      - proud
+      - triumphant
+      - satisfied
+      - relieved
+      - hopeful
+      - grateful
+      - apologetic
+      - confident
+      - arrogant
+      - smug
+      - jealous
+      - envious
+      - suspicious
+      - skeptical
+      - judgmental
+      - disapproving
+      - mocking
+      - teasing
+      - flirting
+      - loving
+      - affectionate
+      - neutral
+      - facepalm
+      - eye_roll
+      - shrugging
+      - staring
+      - thinking
+      - screaming
+      - freezing
+      - hiding
+      - waiting
+      - celebrating
+      - laughing
+      - panicking
+      - giving_up
+      - running_away
+      - refusing
+      - approving
+      - disagreeing
+
+  sentiment:
+    type: single_choice
+    label: Overall sentiment
+    choices:
+      - positive
+      - negative
+      - neutral
+      - mixed
+
+  situations:
+    type: multi_choice
+    label: Situation / Use Case
+    max_items: 4
+    choices:
+      - asking_for_help
+      - asking_for_forgiveness
+      - begging
+      - wanting_something
+      - making_a_mistake
+      - realizing_a_mistake
+      - unexpected_result
+      - bad_news
+      - good_news
+      - failure
+      - success
+      - winning
+      - losing
+      - embarrassing_moment
+      - awkward_moment
+      - caught_in_a_lie
+      - getting_caught
+      - being_rejected
+      - rejection
+      - waiting
+      - late
+      - running_out_of_time
+      - confusing_situation
+      - unexpected_surprise
+      - bad_decision
+      - regret
+      - overthinking
+      - stress
+      - work_problem
+      - school_problem
+      - exam_problem
+      - relationship_problem
+      - friendship_problem
+      - family_problem
+      - money_problem
+      - shopping_problem
+      - socially_awkward
+      - wanting_attention
+      - asking_permission
+      - refusing
+      - giving_up
+      - dont_know_what_to_do
+      - being_confused
+      - being_surprised
+      - being_judged
+      - judging_someone
+      - mocking_someone
+      - celebrating
+      - waiting_for_a_reply
+      - waiting_for_results
+      - unexpected_good_news
+      - unexpected_bad_news
+      - being_late
+      - missing_a_deadline
+      - being_tired
+      - being_bored
+      - being_ignored
+      - being_left_out
+      - being_caught
+      - being_exposed
+
+  tone:
+    type: multi_choice
+    label: Meme Tone
+    max_items: 3
+    choices:
+      - funny
+      - cute
+      - wholesome
+      - sarcastic
+      - ironic
+      - dark_humor
+      - chaotic
+      - dramatic
+      - absurd
+      - relatable
+      - awkward
+      - mocking
+      - passive_aggressive
+      - overdramatic
+      - deadpan
+      - wholesome_emotional
+      - dramatic_emotional
+      - unexpected
+      - cringe
+      - wholesome_funny
+
+  intent:
+    type: multi_choice
+    label: Meme Intent
+    max_items: 4
+    choices:
+      - express_emotion
+      - ask_for_help
+      - ask_for_forgiveness
+      - ask_for_permission
+      - show_regret
+      - show_shock
+      - show_disbelief
+      - show_confusion
+      - show_excitement
+      - celebrate
+      - mock_someone
+      - judge_someone
+      - show_agreement
+      - show_disagreement
+      - react_to_bad_news
+      - react_to_good_news
+      - show_embarrassment
+      - show_frustration
+      - show_relief
+      - show_love
+      - show_affection
+      - show_disappointment
+      - show_anxiety
+      - show_fear
+      - show_anger
+      - show_sadness
+      - show_happiness
+      - show_confidence
+      - show_sarcasm
+      - show_judgment
+      - show_awkwardness
+      - show_guilt
+      - show_pleading
+      - show_despair
+      - give_up
+      - express_confidence
+      - express_disbelief
+      - express_approval
+      - express_disapproval
+      - express_regret
+      - express_relief
+
+  intensity:
+    type: single_choice
+    label: Reaction Intensity
+    choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+
+  meaning:
+    type: text
+    label: Describe what this meme means and when it should be used
+    placeholder: "Example: A cute expression used when begging for forgiveness."
+
+  notes:
+    type: text
+    label: Optional meme context / notes
+    placeholder: "Add any additional context or usage note."

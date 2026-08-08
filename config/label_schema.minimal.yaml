@@ -1,0 +1,39 @@
+name: minimal-example
+description: A minimal labeling schema for testing VisionTag with any image type.
+
+image_field: image
+
+fields:
+  category:
+    type: single_choice
+    label: Image category
+    choices:
+      - animal
+      - person
+      - object
+      - scene
+      - other
+
+  tags:
+    type: multi_choice
+    label: Tags
+    max_items: 5
+    choices:
+      - cute
+      - funny
+      - serious
+      - colorful
+      - dark
+
+  sentiment:
+    type: single_choice
+    label: Overall sentiment
+    choices:
+      - positive
+      - negative
+      - neutral
+
+  description:
+    type: text
+    label: Short description
+    placeholder: "Describe the image in one sentence."
